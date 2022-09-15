@@ -17,9 +17,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color var(--animation), background-color var(--animation),
     box-shadow var(--animation);
-}
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--section-text);
+  &:hover,
+  &:focus {
+    background-color: var(--section-text);
+  }
 }

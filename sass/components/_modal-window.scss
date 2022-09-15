@@ -22,18 +22,18 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   border-radius: 50%;
-}
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  cursor: pointer;
-}
-
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .modal-close-btn-icon {
   transition: fill var(--animation);
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: var(--accent-color);
+  }
 }

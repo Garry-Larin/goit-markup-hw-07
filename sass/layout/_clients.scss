@@ -12,6 +12,13 @@
   border-radius: 4px;
   fill: #afb1b8;
   transition: fill var(--animation);
+
+  &:hover,
+&:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  cursor: pointer;
+}
 }
 
 .clients-list {
@@ -19,9 +26,4 @@
   gap: 30px;
 }
 
-.clients-item-link:hover,
-.clients-item-link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-  cursor: pointer;
-}
+

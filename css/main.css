@@ -92,9 +92,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
-
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: var(--section-text);
 }
 
@@ -114,9 +112,7 @@ body {
   cursor: pointer;
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
-
-.hero-btn-pf:hover,
-.hero-btn-pf:focus {
+.hero-btn-pf:hover, .hero-btn-pf:focus {
   color: var(--background-color);
   background: var(--accent-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -201,6 +197,9 @@ body {
   color: var(--text-color);
   transition: color var(--animation);
 }
+.nav-link:hover, .nav-link:focus {
+  color: var(--accent-color);
+}
 
 .current::after {
   content: "";
@@ -213,11 +212,6 @@ body {
   height: 4px;
   border-radius: 2px;
   transition: opacity var(--animation);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
 }
 
 .menu .link.current {
@@ -237,9 +231,7 @@ body {
   letter-spacing: 0.02em;
   transition: color var(--animation);
 }
-
-.contact:hover,
-.contact:focus {
+.contact:hover, .contact:focus {
   color: var(--accent-color);
 }
 
@@ -332,6 +324,9 @@ body {
 .work-list-item {
   position: relative;
 }
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .work-overlay {
   bottom: 0;
@@ -349,10 +344,6 @@ body {
   color: #ffffff;
   padding-top: 27px;
   padding-bottom: 27px;
-}
-
-.work-list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .job-title {
@@ -378,17 +369,15 @@ body {
   fill: #afb1b8;
   transition: fill var(--animation);
 }
+.clients-item-link:hover, .clients-item-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  cursor: pointer;
+}
 
 .clients-list {
   display: flex;
   gap: 30px;
-}
-
-.clients-item-link:hover,
-.clients-item-link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-  cursor: pointer;
 }
 
 .section-title {
@@ -468,9 +457,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--animation);
 }
-
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
+.social-list-link-footer:hover, .social-list-link-footer:focus {
   background-color: #2196f3;
 }
 
@@ -525,19 +512,15 @@ body {
   padding: 0;
   border-radius: 50%;
 }
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   cursor: pointer;
-}
-
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-  fill: var(--accent-color);
 }
 
 .modal-close-btn-icon {
   transition: fill var(--animation);
+}
+.modal-close-btn:hover .modal-close-btn-icon, .modal-close-btn:focus .modal-close-btn-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form {
@@ -599,7 +582,6 @@ body {
   transform: translate(0, -50%);
   transition: fill var(--animation);
 }
-
 .modal-form-input:focus + .input-icon {
   fill: var(--accent-color);
 }
@@ -614,30 +596,9 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-
 .modal-form-message:focus {
   border-color: var(--accent-color);
   outline: none;
-}
-
-.modal-form-check-desk::before {
-  display: block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  cursor: pointer;
-  border-radius: 2px;
-  margin-right: 7px;
-  transition: background-color var(--animation);
-}
-
-.modal-form-chek:checked + .modal-form-check-desk::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/galochka.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
 }
 
 .modal-form-check-desk {
@@ -649,6 +610,24 @@ body {
   margin-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--section-text);
+}
+.modal-form-check-desk::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 7px;
+  transition: background-color var(--animation);
+}
+.modal-form-chek:checked + .modal-form-check-desk::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/galochka.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
 
 .modal-form-submit {
@@ -670,9 +649,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
-
-.modal-form-submit:hover,
-.modal-form-submit:focus {
+.modal-form-submit:hover, .modal-form-submit:focus {
   background-color: var(--section-text);
 }
 
@@ -725,6 +702,11 @@ body {
   border: none;
   cursor: pointer;
 }
+.subscribe-btn:hover, .subscribe-btn:focus {
+  color: var(--background-color);
+  background: var(--accent-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .form-and-bottom {
   display: flex;
@@ -747,13 +729,6 @@ body {
 
 .icon-telega {
   fill: var(--background-color);
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  color: var(--background-color);
-  background: var(--accent-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .contract {
@@ -780,20 +755,16 @@ body {
   background-color: var(--background-color);
   transition: background-color var(--animation);
 }
-
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus {
   background-color: #2196f3;
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--background-color);
 }
 
 .social-list-icon {
   fill: #afb1b8;
   transition: fill var(--animation);
+}
+.social-list-link:hover .social-list-icon, .social-list-link:focus .social-list-icon {
+  fill: var(--background-color);
 }
 
 .section-title-pf {
@@ -826,10 +797,12 @@ body {
   display: block;
   transition: box-shadow var(--animation);
 }
-
-.link-text:hover .overlay,
-.link-text:focus .overlay {
+.link-text:hover .overlay, .link-text:focus .overlay {
   transform: translate(0, 0);
+}
+.link-text:hover, .link-text:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .div-overlay {
@@ -855,12 +828,6 @@ body {
   overflow: auto;
   transform: translate(0, 100%);
   transition: transform var(--animation);
-}
-
-.link-text:hover,
-.link-text:focus {
-  cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-text-item {

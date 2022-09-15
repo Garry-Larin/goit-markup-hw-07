@@ -56,10 +56,10 @@
   left: 15px;
   transform: translate(0, -50%);
   transition: fill var(--animation);
-}
 
-.modal-form-input:focus + .input-icon {
-  fill: var(--accent-color);
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-message {
@@ -71,31 +71,11 @@
   transition: border-color var(--animation);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.modal-form-message:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-.modal-form-check-desk::before {
-  display: block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  cursor: pointer;
-  border-radius: 2px;
-  margin-right: 7px;
-  transition: background-color var(--animation);
-}
-
-.modal-form-chek:checked + .modal-form-check-desk::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/galochka.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
 .modal-form-check-desk {
@@ -107,6 +87,26 @@
   margin-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--section-text);
+
+  &::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 7px;
+    transition: background-color var(--animation);
+  }
+
+  .modal-form-chek:checked + &::before {
+    background-color: var(--accent-color);
+    background-image: url(../images/galochka.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
 }
 
 .modal-form-submit {
@@ -128,9 +128,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color var(--animation), background-color var(--animation),
     box-shadow var(--animation);
-}
 
-.modal-form-submit:hover,
-.modal-form-submit:focus {
-  background-color: var(--section-text);
+  &:hover,
+  &:focus {
+    background-color: var(--section-text);
+  }
 }
