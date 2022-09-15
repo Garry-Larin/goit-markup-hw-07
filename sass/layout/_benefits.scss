@@ -1,0 +1,35 @@
+.benefits {
+  padding-top: 94px;
+}
+
+.benefits-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.benefits-icon-cont {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.icon-benefits {
+  display: flex;
+  align-self: center;
+}
