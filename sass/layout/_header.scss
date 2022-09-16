@@ -13,14 +13,14 @@
   align-items: center;
 }
 
-.menu-list-container {
+.menu__list-container {
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
-.list-contact-container {
+.menu__list-contact-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-.nav-link {
+.menu__link {
   display: block;
   position: relative;
   font-weight: 500;
@@ -61,7 +61,7 @@
   color: var(--accent-color);
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -80,7 +80,7 @@
   }
 }
 
-.contact-item:not(:last-child) {
+.menu__contact-item:not(:last-child) {
   margin-right: 50px;
 }
 

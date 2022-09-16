@@ -73,7 +73,7 @@ body {
   margin: -1px;
 }
 
-.hero-btn {
+.hero__btn {
   font-weight: 500;
   border: none;
   border-radius: 4px;
@@ -92,7 +92,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--section-text);
 }
 
@@ -140,11 +140,11 @@ body {
   color: var(--accent-color);
 }
 
-.logo-link {
+.logo_link {
   margin-right: 93px;
 }
 
-.logo-black {
+.logo_black {
   color: #000000;
 }
 
@@ -172,14 +172,14 @@ body {
   align-items: center;
 }
 
-.menu-list-container {
+.menu__list-container {
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
-.list-contact-container {
+.menu__list-contact-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -187,7 +187,7 @@ body {
   margin: 0;
 }
 
-.nav-link {
+.menu__link {
   display: block;
   position: relative;
   font-weight: 500;
@@ -197,7 +197,7 @@ body {
   color: var(--text-color);
   transition: color var(--animation);
 }
-.nav-link:hover, .nav-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -218,7 +218,7 @@ body {
   color: var(--accent-color);
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -235,7 +235,7 @@ body {
   color: var(--accent-color);
 }
 
-.contact-item:not(:last-child) {
+.menu__contact-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -244,7 +244,7 @@ body {
   margin-right: 10px;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -274,7 +274,7 @@ body {
   padding-top: 94px;
 }
 
-.benefits-title {
+.benefits__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -282,16 +282,16 @@ body {
   margin-bottom: 10px;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
   justify-content: center;
 }
 
-.benefits-item:not(:nth-child(4n)) {
+.benefits__item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
-.benefits-icon-cont {
+.benefits__icon-container {
   width: 270px;
   height: 120px;
   display: flex;
@@ -301,7 +301,7 @@ body {
   border-radius: 4px;
 }
 
-.icon-benefits {
+.benefits__icon {
   display: flex;
   align-self: center;
 }
