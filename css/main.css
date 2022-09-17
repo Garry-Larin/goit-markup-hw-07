@@ -93,7 +93,7 @@ body {
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
 .hero__btn:hover, .hero__btn:focus {
-  background-color: var(--section-text);
+  background-color: #188ce8;
 }
 
 .hero-btn-pf {
@@ -650,7 +650,7 @@ body {
   transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
 .modal-form-submit:hover, .modal-form-submit:focus {
-  background-color: var(--section-text);
+  background-color: #188ce8;
 }
 
 .modal-form-wrapper {
