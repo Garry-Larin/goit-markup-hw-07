@@ -179,7 +179,7 @@ body {
   margin: 0;
 }
 
-.menu__list-contact-container {
+.contact {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -222,7 +222,7 @@ body {
   margin-right: 50px;
 }
 
-.contact {
+.contact__link {
   display: flex;
   align-items: center;
   color: var(--section-text);
@@ -231,15 +231,15 @@ body {
   letter-spacing: 0.02em;
   transition: color var(--animation);
 }
-.contact:hover, .contact:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 
-.menu__contact-item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.icon-convert {
+.contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
