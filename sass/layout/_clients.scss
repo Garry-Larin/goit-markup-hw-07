@@ -1,3 +1,7 @@
+.clients {
+  @extend %section;
+}
+
 .clients-list {
   display: flex;
 }
@@ -14,16 +18,14 @@
   transition: fill var(--animation);
 
   &:hover,
-&:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-  cursor: pointer;
-}
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
 }
 
 .clients-list {
   display: flex;
   gap: 30px;
 }
-
-

@@ -1,3 +1,7 @@
+.work-examples {
+  @extend %section;
+}
+
 .work-examples .title {
   font-size: 18px;
   line-height: 2;
