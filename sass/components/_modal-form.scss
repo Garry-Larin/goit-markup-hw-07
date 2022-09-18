@@ -79,9 +79,7 @@
 }
 
 .modal-form-check-desk {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter(flex, center, center);
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 30px;

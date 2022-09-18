@@ -14,9 +14,7 @@
 }
 
 .footer-lister {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @include flexCenter(flex, space-between, baseline);
 }
 
 .common-footer {
@@ -32,9 +30,7 @@
 }
 
 .social-list-link-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(flex, center, center);
   width: 44px;
   height: 44px;
   border-radius: 50%;

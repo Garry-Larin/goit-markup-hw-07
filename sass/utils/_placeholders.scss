@@ -2,9 +2,3 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-@mixin flex($ds, $js, $ai) {
-  display: $ds;
-  justify-content: $js;
-  align-items: $ai;
-}
